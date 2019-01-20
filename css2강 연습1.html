@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>css 기본 2강 연습</title>
+
+    <style>
+        
+        #header{
+            width:500px; 
+            background-color:#ffd800;
+            text-align:center;
+            border:solid;
+        }
+        #menu_bar{
+            width: 500px;
+            background-color: #b6ff00;
+            border: solid;
+            font-weight:bold;
+            font-size:larger;
+            text-align:center;
+            overflow:hidden;
+        }
+        #menu_bar #menu{
+            width: 125px;
+            background-color: #b6ff00;
+            text-align: center;
+            color:#1a7312;
+            float:left;
+        }
+        #wrap {
+            width: 500px;
+            background-color: floralwhite;
+            border: solid;
+            overflow:hidden;
+        }
+        #content {
+            width: 300px;
+            background-color: lightblue;
+            text-align: left;
+            border: solid;
+            float:left;
+        }
+        .menu1{
+            color:red;
+            font-size:2em;
+        }
+        .menu2{
+            color:blueviolet;
+            font-size:1.5em;
+        }
+        #side_banner{
+            width:150px;
+            border:dashed;
+            float:left;
+        }
+        #footer {
+            width: 500px;
+            background-color: #ffffd0;
+            text-align: left;
+            border: solid;
+        }
+        h1~ol{
+            color:orangered;
+        }
+        h1+p{
+            color:orangered;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
+
+    <div id="menu_bar">
+        <p>menu</p>
+        <hr />
+        <div id="menu">menu1</div>
+        <div id="menu">menu2</div>
+        <div id="menu">menu3</div>
+        <div id="menu">menu4</div>
+    </div>
+
+    <div id="wrap">
+        <div id="content">
+            <h1>CONTENT</h1>
+            <ul>
+                <li class="menu1">content1</li>
+                <li class="menu2">content2</li>
+                <li class="menu1">content3</li>
+                <li class="menu2">content4</li>
+                <li class="menu1">content5</li>
+            </ul>
+            <ol>
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+            </ol>
+        </div>
+        <div id="side_banner">
+            <h1>BANNER</h1>
+            <a href="http://www.catcare.or.kr/" target="_blank"><img width="150"src="http://www.catcare.or.kr/layouts/portalon/http://www.catcare.or.kr/files/attach/images/2611088/31b6580a30740310f159b9f7c40884b9.jpg"></a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h1>FOOTER</h1>
+        <p>이 페이지는 서우가 만든 페이지 입니당.</p>
+    </div>
+
+</body>
+</html>
