@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>css 3강 연습1</title>
+    
+    <style>
+        #header, #content, #footer {
+            width:1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        #header .left, #content .left, #footer .left {
+                width: 150px;
+                height: 250px;
+                border: 1px solid #808080;
+                float: left;
+                background-color: #cccccc;
+        }
+            #header .center, #content .center, #footer .center {
+                width: 694px;
+                height: 250px;
+                float: left;
+                border: 1px solid #808080;
+                background-color: #cccccc;
+            }
+            #header .right, #content .right, #footer .right {
+                width: 150px;
+                height: 250px;
+                border: 1px solid #808080;
+                float: right;
+                background-color: #cccccc;
+            }
+        #content .center_wrap{
+            overflow:hidden;
+        }
+        #content #main_menu ul li{
+            list-style:none;
+            float:left;
+            font-size:larger;
+            font-weight:bold;
+            margin: 0 47px;
+        }
+        #content .hi{
+            margin:10px 40px;
+        }
+        #footer .right,#header .left{
+            border-radius:10px 0;
+        }
+            #footer .left, #header .right {
+                border-radius: 0 10px;
+            }
+            #content .left{
+                border-radius: 0 10px 10px 0;
+            }
+            #content .right {
+                border-radius: 10px 0 0 10px;
+            }
+            #content .center {
+                border-radius: 10px 10px 10px 10px;
+            }
+            #footer .center {
+                border-radius: 10px 10px 0 0;
+            }
+            #header .center {
+                border-radius: 0 0 10px 10px;
+            }
+            ul li:first-child{
+                color: red;
+            }
+            ul li:nth-child(2n+1){
+                color:red;
+            }
+            ul li:nth-child(2n){
+                color:green;
+            }
+            ul li:hover{
+                color:orange;
+            }
+            input:focus{
+                border:2px solid red;
+                padding:10px;
+            }
+            input:enabled{
+                color:black;
+                font-weight:bold;
+            }
+            input:disabled{
+                color:rebeccapurple;
+            }
+            h1::first-letter{
+                font-weight:bold;
+                font-size:2em;
+            }
+            #content .center .hi p::first-line{
+                font-weight:bolder;
+            }
+
+            #footer .center a::after{
+                content : ' - ' attr(href);
+            }
+
+        </style>
+</head>
+<body>
+    <div id="header">
+        <div class="left"></div>
+        <div class="center">
+            <form>
+                아이디: <input type="text" value="id" /><br />
+                비밀번호: <input type="password" value="12345" disabled="disabled" />
+            </form>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <div id="content">
+        <div class="left"></div>
+        <div class="center">
+            
+            <div class="center_wrap">
+            <div id="main_menu">
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </div>
+            
+            </div>
+
+            <div class="hi">
+            <h1>컨텐츠 제목입니다.</h1>
+            <p>
+                컨텐츠 본문입니다.<br />
+                컨텐츠 본문입니다.
+            </p>
+            </div>
+            
+           
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <div id="footer">
+
+        <div class="left"></div>
+        <div class="center">
+            <a href="http://www.catcare.or.kr" target="_blank">
+            <img src="레오.jpg" width="200" /></a>
+        </div>
+        <div class="right"></div>
+    </div>
+
+</body>
+</html>
