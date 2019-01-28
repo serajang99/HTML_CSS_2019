@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>css 속성 2강</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        div {
+            font-weight:bold;
+            text-align:center;
+            width:200px;
+            height:200px;
+            background-color:crimson;
+            border: 5px solid yellow;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #content1{
+            margin: 0;
+            border-style: none;
+        }
+
+        #content2{
+            margin: 0px;
+            box-sizing: border-box;
+            border: 10px dashed green;
+         }
+
+        #content3{
+            box-sizing: content-box;
+            border: 10px solid orange;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #content4{
+            margin:10px;
+            padding:10px;
+        }
+
+        #wrap{
+            background-color: #cccccc;
+            overflow: hidden;
+            margin: 0 auto;
+            width:810px;
+            border-style:none;
+        }
+            #wrap div {
+                width: 250px;
+                background-color: white;
+                float: left;
+                border-style: none;
+                border-radius: 10px;
+                margin: 10px;
+                font-weight: 400;
+                text-align:left;
+            }
+        #wrap div p{
+            font-size:150%;
+            padding: 0 30px;
+        }
+        #wrap div ul li{
+            list-style:none;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="content1"> 200*200 </div>
+    <div id="content2"> 200*200 <br /> margin </div>
+    <div id="content3"> 200*200 <br /> padding </div>
+    <div id="content4"> 200*200 <br /> margin <br /> padding</div>
+
+    <div id="wrap">
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+        
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
