@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>css속성3강 연습</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 5px dashed green;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 200px;
+            text-align: center;
+            color:black;
+        }
+
+        div:nth-child(1){
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.0em;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+
+            div:nth-child(2) {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+                background-color:yellow;
+                position:absolute;
+                top:100px;
+                left:100px;
+                z-index: 1;
+            }
+            div:nth-child(3) {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 2.0em;
+                position:absolute;
+                top:200px;
+                left:200px;
+            }
+        #wrap {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            top: 400px;
+            left: 400px;
+        }
+        #wrap .content{
+            height:100px;
+            width:100px;
+            background-color:aquamarine;
+            position:absolute;
+            line-height:100px;
+            top:50px;
+            left:50px;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div id="wrap">
+        <div class="content">
+            4
+        </div>
+    </div>
+</body>
+</html>
